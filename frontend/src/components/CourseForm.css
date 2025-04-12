@@ -1,0 +1,16 @@
+.course-form{
+    position: relative;
+    max-height: 10px;
+    z-index: 100;
+    background-color: transparent;
+}
+.course-form form input.inp{
+    flex-basis: 100%;
+}
+
+.inp-box label {
+    font-size: 3.2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the labels bold for better visibility */
+    margin-bottom: 5px; /* Add some spacing below the labels */
+    display: block; /* Ensure the label appears on its own line */
+}

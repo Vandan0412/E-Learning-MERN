@@ -1,0 +1,110 @@
+.banner.container{
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    min-height: 110vh;
+}
+.banner.container .lines{
+    bottom: 20rem;
+}
+.banner .content{
+    display: flex;
+    align-items: center;
+}
+.banner .content h2{
+    color: var(--white-color);
+    font-size:  2.6rem;
+    font-weight: 600;
+    flex: 30%;
+    line-height: 3.5rem;
+    border-right: .2rem solid #fff;
+    padding: 5rem 2rem 5rem 0;
+}
+.banner .content h2 span{
+    color: #0AB3FF;
+}
+.banner .content p{
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    padding-left: 2rem;
+}
+.banner .img{
+    position: relative;
+    width: 70rem;
+    height: 70rem;
+}
+.banner .img::before{
+    content: "";
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    background-color: rgb(8, 146, 208);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    filter: blur(15rem);
+}
+.banner .img img{
+    width: 115%;
+    position: absolute;
+    top: 0;
+    left: -12rem;
+}
+.banner .img img:not(:first-child){
+    filter: blur(2rem);
+}
+.banner .img img:first-child{
+    position: relative;
+    z-index: 1;
+}
+.banner .img .bg{
+    display: block;
+    position: absolute;
+    width: 47rem;
+    height: 47rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1rem solid #b3e2f8;
+    background-color: #70a2b9;
+    z-index: -1;
+    border-radius: 5rem;
+}
+.banner .col:last-child{
+    text-align: right;
+}
+.banner .circle{
+    z-index: -1;
+}
+.banner .circle-1{
+    width: 80rem;
+    height: 80rem;
+    left: -15%;
+}
+.banner .circle-2{
+    width: 65rem;
+    height: 65rem;
+    left: 5%;
+}
+.banner .circle-3{
+    width: 55rem;
+    height: 55rem;
+    left: 20%;
+}
+.banner .circle-4{
+    left: 50%;
+    top: -55%;
+    width: 70rem;
+    height: 70rem;
+    transform: translateX(-50%);
+}
+.banner .circle-5{
+    left: 50%;
+    top: -50%;
+    width: 70rem;
+    height: 70rem;
+    transform: translateX(-50%);
+}

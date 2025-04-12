@@ -1,0 +1,175 @@
+.course-overview{
+    background-color: #1E1E1E;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.course-overview-header{
+    background-color: #254352;
+    display: flex;
+    justify-content: center;
+    padding: 0 5rem 4rem;
+    box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 2;
+}
+.course-overview-header h1{
+    color: var(--white-color);
+    background-color: #1D3846;
+    padding: 1rem 2rem 2rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    font-size: 5rem;
+    box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, .5);
+}
+.course-overview .box {
+    margin: 3rem 0;
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+.course-overview .box.right {
+    justify-content: end;
+}
+.course-overview .box a{
+    padding: 3rem 20rem;
+    border-radius: 5rem;
+    background-color: #254352;
+    font-size: 3rem;
+    color: var(--white-color);
+    margin: 0 5rem;
+    border: 1rem solid #25abe95e;
+    position: relative;
+    display: inline-block;
+}
+.course-overview .box a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7rem;
+    height: 1rem;
+    background-color: #25abe95e;
+}
+.course-overview .box.left a::before{
+    left: -7rem;
+}
+.course-overview .box.right a::before{
+    right: -7rem;
+}
+.course-overview .box a::after,
+.course-overview .quiz-btn a::after{
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.course-overview .box:first-child a::after{
+    display: none;
+}
+.course-overview .box.right a::after{
+    left: -5rem;
+}
+.course-overview .box.left a::after{
+    right: -5rem;
+}
+
+.course-overview .box .line{
+    position: absolute;
+    width: 75rem;
+    height: .1rem;
+    background-color: var(--white-color);
+    z-index: 100;
+    z-index: -1 ;
+}
+.course-overview .line.active {
+    background-color:#1585BF;
+    box-shadow: 0 0 1rem .2rem #1585BF,
+    0 0 2rem .4rem #1585BF;
+    transition: .3s ease-in;
+}
+.course-overview .box .line-1,
+.course-overview .box .line-3{
+    top: 13rem;
+    left: 58rem;
+    transform: rotate(12deg);
+}
+.course-overview .box .line-2,
+.course-overview .box .line-4{
+    top: 13.5rem;
+    right: 58rem;
+    transform: rotate(-12deg);
+}
+.course-overview .box:last-child .line{
+    display: none;
+}
+.quiz-btn{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.quiz-btn a{
+    color: var(--white-color);
+    font-size: 5rem;
+    padding: 1.5rem 18rem;
+    border-top-left-radius: 7rem;
+    border-top-right-radius: 7rem;
+    background-color: #01537D;
+    border: 2rem solid #1585BF;
+    border-bottom: none;
+}
+.course-overview .quiz-btn a::after{
+    top: -5rem;
+    left: 50%;
+    transform: translate(-50%, 0);  
+}
+.course-overview .line-5{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-59%);
+    width: .1rem;
+    height: 85rem;
+    top: 0;
+    background-color: var(--white-color);
+}
+.course-overview .circle{
+    z-index: 1;
+}
+.course-overview .circle-1{
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    bottom: 0;
+    left: -5rem;
+    bottom: -13rem;
+}
+.course-overview .circle-2{
+    left: 45rem;
+    bottom: -25rem;
+    width: 60rem;
+    height: 60rem;
+}
+.course-overview .circle-3{
+    left: 100rem;
+    bottom: -25rem;
+    width: 65rem;
+    height: 65rem;
+}
+.course-overview .circle-4{
+    right: -25rem;
+    bottom: -20rem;
+    width: 65rem;
+    height: 65rem;
+}
+.course-overview .circle-5{
+    right: -15%;
+    top: -30%;
+}

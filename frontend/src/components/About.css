@@ -1,0 +1,32 @@
+.about.container{
+    min-height: 120vh;
+}
+.about .box{
+    position: relative;
+    background-color: #0A91D2;
+    padding: 8rem 7rem 5rem;
+    border-radius: 3rem;
+    color: var(--white-color);
+    font-size: 2.3rem;
+    line-height: 3.5rem;
+    width: 60rem;
+    height: 60rem;
+    box-shadow: 0 0 10rem #0A91D2,
+                2rem 2rem 20rem #0A91D2;
+}
+.about .img{
+    text-align: right;
+}
+.about img{
+    width: 80%;
+    object-fit: cover;
+    margin-left: auto;
+}
+.about .circle-6{
+    right: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.about .lines{
+    bottom: 25rem;
+}

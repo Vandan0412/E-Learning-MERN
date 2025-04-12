@@ -1,0 +1,161 @@
+/* Existing Styles (No changes here) */
+.container{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    position: relative;
+    background-color: rgba(91, 160, 229,.7);
+    padding: 5rem 3rem 2rem;
+    border-radius: 2rem;
+    width: 80rem;
+    min-height: 60rem;
+    padding-top: 15rem;
+    box-shadow: 0rem 0rem 4rem rgba(91, 160, 228, .6),
+    3rem 3rem 20rem rgba(91, 160, 228, .5);
+    z-index: 10;
+    backdrop-filter: blur(2rem);
+    --webkit-backdrop-filter: blur(2rem);
+}
+form.signin{
+    min-height: 45rem;
+    padding-top: 12rem;
+    width: 60rem;
+}
+form.signin input[type="submit"]{
+    margin-top: 5rem;
+}
+form .inp-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .inp-box input,
+form input.inp,
+form textarea{
+    background-color: rgba(26, 59, 75, .5);
+    font-size: 1.8rem;
+    color: var(--white-color);
+    border-radius: 1.5rem;
+    padding: 1.2rem 2.4rem;
+    flex-basis: 49%;
+    margin: 1.5rem 0;
+}
+form textarea{
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
+
+form input.inp{
+    width: 100%;
+}
+form input[type="submit"]{
+    color: #999;
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+form input::placeholder{
+    color: #999;
+}
+form a{
+    background-color: #00ACFF;
+    border-radius: 2rem;
+    padding: 1.5rem 3rem;
+    box-shadow: .5rem .5rem .6rem #555;
+    display: inline-block;
+    margin: 1.5rem auto;
+    color: var(--white-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+form .line,
+form .btn{
+    display: flex;
+    justify-content: center;
+}
+form .line span{
+    width: 60%;
+    background-color: #111;
+    height: .5rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+.register .circle-1,
+.register .circle-3,
+.register .circle-4{
+    top: 50%;
+    left: -30%;
+    transform: translateY(-50%);
+    box-shadow: 1rem 1rem 10rem rgba(30, 85, 112,.8),
+    4rem 4rem 40rem rgba(30, 85, 112,.8),
+    8rem 8rem 100rem rgba(30, 85, 112,.8);
+    width: 80rem;
+    filter: blur(1rem);
+    height: 80rem;
+}
+.register.form-2 .circle-1{
+    width: 90rem;
+    height: 90rem;
+}
+.register .circle-3{
+    width: 50rem;
+    height: 50rem;
+    left: 5%;
+}
+.register .circle-4{
+    width: 40rem;
+    height: 40rem;
+    left: 25%;
+}
+.register .circle-2{
+    top: 20%;
+    right: -13%;
+    width: 60rem;
+    height: 60rem;
+    box-shadow: 1rem 1rem 10rem rgba(30, 85, 112,.8),
+    4rem 4rem 40rem rgba(30, 85, 112,.8),
+    8rem 8rem 100rem rgba(30, 85, 112,.8);
+    filter: blur(1rem);
+}
+.register .blur{
+    filter: blur(5rem);
+}
+/* New Button Styles for "Unlock Your Potential" */
+.submit-btn {
+    background-color: #00ACFF;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.5rem 4rem;
+    border-radius: 2rem;
+    box-shadow: .5rem .5rem .6rem #555;
+    width: auto; /* Ensure the button width is based on the content */
+    cursor: pointer;
+    display: inline-block; /* Make sure the button is not block level */
+    margin: 3rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0088cc;
+}
+
+/* Form Button Alignment */
+form .btn {
+    display: flex;
+    justify-content: center;
+    width: auto; /* Ensure the .btn container does not stretch the button */
+}

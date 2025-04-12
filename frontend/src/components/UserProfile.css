@@ -1,0 +1,159 @@
+.user-profile{
+    position: fixed;
+    top: 0;
+    left: -120%;
+    min-height: 100vh;
+    z-index: 1000;
+    background-color: #0e4056;
+    padding: 5rem 3rem;
+    width: 65rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    box-shadow: 1rem 0 .5rem rgba(0, 0, 0, .3);
+    transition: all .3s ease-in-out;
+}
+.user-profile.active{
+    left: 0%;
+}
+.user-profile .user-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-profile .user-details .user-img{
+    border: .2rem solid #1f7da5;
+    background-color: #175c7a;
+    padding: 1rem;
+    border-radius: 5rem;
+    flex-basis: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, .5);
+}
+.user-profile .user-details .user-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.user-profile .user-details .user-details-box{
+    flex-basis: 70%;
+}
+.user-profile .user-details .user-details-box h4{
+    color: #000000;
+    font-size: 2.3rem;
+    font-weight: 600;
+    background-color: #4f4f4f;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 100%;
+    margin:1rem 0;
+}
+.user-profile .line{
+    background-color: #16035e;
+    width: 100%;
+    border-radius: 2rem;
+    margin: 3rem 0 1rem;
+    height: .7rem;
+    display: block;
+}
+.user-profile .user-courses{
+    background-color: #1f7da5;
+    border-radius: 5rem;
+    padding: 2rem 5rem;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.user-profile .user-courses::-webkit-scrollbar{
+    background-color: transparent;
+    width: 1rem;
+    border-radius: 3rem;
+}
+.user-profile .user-courses::-webkit-scrollbar-thumb{
+    background-color: #1f7da5;
+    border-radius: 3rem;
+}
+.user-profile .user-courses h2{
+    color: var(--white-color);
+    background-color: #16035e;
+    font-size: 2.3rem;
+    width: 30rem;
+    text-align: center;
+    border-radius: 3rem;
+    margin: 2rem auto 1rem;
+    padding: 1rem 2rem;
+}
+.user-profile .user-courses .box-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+.user-profile .user-courses .box-container .box {
+    margin: 0 2rem;
+}
+.user-profile .user-courses .box-container .box .img{
+    border-radius: 7rem;
+    /* background-color: #0e4056; */
+    /* overflow: hidden; */              
+    padding: .5rem;
+    text-align: center;
+}
+.user-profile .user-courses .box-container .box .img img{
+    width: 28rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 7rem;
+    border: .5rem solid #0e4056;
+}
+.user-profile .user-courses .box-container .box h4{
+    background-color: #1A3B4B;
+    color: var(--white-color);
+    border: .1rem solid #5088D7;
+    border-radius: 5rem;
+    padding: 2rem .5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: -3rem;
+    z-index: 1;
+    position: relative;
+}
+
+
+.user-profile .embla {
+}
+.user-profile .embla__container {
+    display: flex;
+    align-items: center;
+    width: 65rem;
+}
+
+.user-profile .embla__slide {
+    flex: 0 0 50%; /* Show 3 slides */
+    margin-right: 1rem;
+}
+.user-profile  .embla__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0e4056;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    width: 5rem;
+    height: 5rem;
+    border: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile  .embla__button--prev {
+    left: -3rem; 
+}
+
+.user-profile  .embla__button--next {
+    right: -3rem; 
+}

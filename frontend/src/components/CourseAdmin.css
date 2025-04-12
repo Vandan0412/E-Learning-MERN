@@ -1,0 +1,106 @@
+.admin{
+    background-color: var(--bg-color);
+    height: 100vh;
+    overflow-y: hidden;
+}
+.admin .header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    padding: 3rem 6rem;
+    background-color: #254352;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .5);
+}
+.admin .header .name{
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: #1D3846;
+    padding: 7rem 5rem 2rem;
+    margin-top: -10rem;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem .8rem rgba(0, 0, 0, .6);
+}
+.admin .header button{
+    background-color: transparent;
+}
+.admin .header img{
+    width: 12rem;
+}
+.admin .sidebar{
+    background-color: #192A32;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: none auto;
+    width: 40rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    border-right: 1.5rem solid #D9D9D9;
+    padding-top: 18rem;
+}
+.admin .sidebar a{
+    width: 100%;
+    display: block;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    background-color: #254352;
+    font-size: 3rem;
+    font-weight : 600;
+    padding: 2.5rem 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .6);
+    z-index: 40;
+    transition: all .3s ease-in-out;
+}
+.admin .sidebar a span{
+    color: var(--white-color);
+}
+.admin .sidebar a:hover,
+.admin .sidebar a.active{
+    width: 110%;
+}
+.admin .circle-1{
+    width: 100rem;
+    height: 100rem;
+    left: -15%;
+    top: 5rem;
+}
+.admin .circle-2{
+    left: 40rem;
+    bottom: -35%;
+    width: 70rem;
+    height: 70rem;
+}
+.admin .circle-3{
+    left: 70%;
+    transform: translateX(-50%);
+    bottom: -25%;
+    width: 65rem;
+    height: 65rem;
+}
+.admin .circle-4{
+    right: -12%;
+    bottom: -20%;
+    width: 60rem;
+    height: 60rem;
+}
+.admin .circle-5{
+    top: -20%;
+    right: -20%;
+}
+.admin .main-content{
+    width: calc(100% - 40rem);
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    left: 40rem;
+}

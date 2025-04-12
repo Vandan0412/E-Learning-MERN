@@ -1,0 +1,112 @@
+.contact{
+    min-height: 120vh;
+}
+.contact.container{
+}
+.contact p{
+    color: var(--white-color);
+    font-size: 2.8rem;
+    line-height: 5rem;
+    padding: 0 15rem;
+}
+.contact .mid-line{
+    position: absolute;
+    left: 45%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    background-color: #c0c0c0;
+    height: 60rem;
+    border-radius: 3rem;
+    width: 1.5rem;
+}
+.contact form{
+    position: relative;
+    min-height: 50rem;
+    width: 70rem;
+    padding-top: 10rem;
+    background-color: #afafaf;
+    box-shadow: 0 0 4rem #0A91D2,
+                2rem 2rem 8rem #0A91D2;
+    margin-top: 15rem;
+}
+.contact form input[type="submit"]{
+    background-color: #1A3B4B;
+    color: #FFFFFF;
+    border-radius: 2rem;
+    transition: all .3s ease-in;
+}
+.contact form input[type="submit"]:hover{
+    background-color: #111;
+}
+.contact form .inp,
+.contact form textarea,
+.contact form textarea::placeholder,
+.contact form .inp::placeholder{
+    color: #1A3B4B;
+    background-color: transparent;
+    border-radius: 0;
+}
+.contact form .inp,
+.contact form textarea{
+    border-bottom: .2rem solid #1A3B4B;
+}
+.contact .circle-6{
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+}
+.contact .circle-7{
+    bottom: 4rem;
+    right: 2rem;
+}
+
+.contact form select.inp {
+    font-size: 1.6rem;
+    color: #1A3B4B; /* Matches the other inputs */
+    background-color: transparent; /* Ensures a consistent look */
+    border: none; /* Removes default borders */
+    border-bottom: 0.2rem solid #1A3B4B; /* Matches other inputs */
+    padding: 0.5rem 1rem; /* Adds spacing inside the dropdown */
+    font-size: 1.6rem; /* Adjusts the font size to match */
+    outline: none; /* Removes default focus outline */
+    cursor: pointer; /* Adds pointer cursor for better UX */
+    transition: all 0.3s ease-in; /* Smooth hover effects */
+}
+
+.contact form select.inp:focus {
+    border-bottom: 0.2rem solid #0A91D2; /* Highlight border on focus */
+}
+
+.contact form select.inp option {
+    color: #1A3B4B; /* Dropdown text color */
+    background-color: #ffffff; /* Dropdown background */
+}
+
+/* Form Submission Message Styling */
+.form-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #1A3B4B;
+    background-color: #eaf7ea; /* Light green for success */
+    border: 1px solid #d1e7d1;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.form-message.success {
+    color: #1A3B4B;
+    background-color: #eaf7ea; /* Light green */
+    border: 1px solid #d1e7d1;
+}
+
+/* Apply error styles */
+.form-message.error {
+    color: #842029;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}

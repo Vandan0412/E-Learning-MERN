@@ -1,0 +1,66 @@
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+header nav{
+    border-bottom: 0.5rem solid #c0c0c0;
+    padding: 4rem 0;
+}
+header nav a{
+    color: var(--white-color);
+    font-size: 2rem;
+    /* width: 12rem; */
+    text-align: center;
+    padding: 1rem;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s linear;
+    display: inline-block;
+}
+header nav a.active,
+header nav a:hover{
+    background-color: #c0c0c0;
+    color: #4F4F4F;
+}
+header .btn{
+    color: #0AB3FF;
+    font-size: 2rem;
+    background-color: #082c3e;
+    border-radius: 3rem;
+    padding: 2rem 4rem;
+    box-shadow: 0 0 4rem rgb(30, 85, 112);
+    transition: all .3s ease-in;
+}
+html {
+    scroll-behavior: smooth;
+}
+header .btn:hover{
+    background-color: #0AB3FF;
+    color: var(--white-color);
+    box-shadow: 0 0 2rem #0AB3FF,
+    0 0 4rem #0AB3FF;
+}
+header .logo.btn{
+    padding: .5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+header .for-text { /* Changed header.for-text to just .for-text */
+    text-align: center; /* Ensures text is centered below the image */
+    padding-top: 5px; /* Adds space between image and text */
+}
