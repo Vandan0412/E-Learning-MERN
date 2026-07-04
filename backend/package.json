@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "server": "node server.js",
+    "quiz": "node Quiz.js",
+    "chat": "python app.py",
+    "start": "concurrently -n SERVER,QUIZ,CHAT -c green,blue,yellow \"npm run server\" \"npm run quiz\" \"npm run chat\""
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "js-cookie": "^3.0.5",
@@ -22,5 +25,8 @@
     "nodemon": "^3.1.9",
     "openai": "^4.89.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
