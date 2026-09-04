@@ -101,6 +101,39 @@ Copy `backend/.env.example` to `backend/.env` and fill in:
 | Backend (Express) | 5000 |
 | AI Service (Flask) | 5003 |
 
+--------------------------------------------------------------------------------------------
+
+## Running with Docker
+
+### Start the application
+
+From the project root:
+
+docker compose -f docker-compose.yaml up
+
+This starts:
+
+- Node.js/Express backend
+- MongoDB
+- Mongo Express
+
+### Services
+
+Backend:
+http://localhost:5000
+
+Mongo Express:
+http://localhost:8081
+
+MongoDB:
+localhost:27017
+
+### Stop the application
+
+docker compose -f docker-compose.yaml down
+
+---------------------------------------------------------------------------------------------
+
 ## License
 
 [MIT](LICENSE)

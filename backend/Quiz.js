@@ -13,7 +13,7 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-const MONGODB_URI = "mongodb://localhost:27017/E-Learning";
+const MONGODB_URI = "mongodb://mongodb:27017/E-Learning";
 
 // MongoDB connection
 mongoose.connect(MONGODB_URI, {

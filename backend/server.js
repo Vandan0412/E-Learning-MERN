@@ -46,7 +46,7 @@ app.use(
 );
 
 // Database Connection
-mongoose.connect('mongodb://127.0.0.1:27017/E-Learning',  {
+mongoose.connect('mongodb://mongodb:27017/E-Learning',  {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })

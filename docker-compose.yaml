@@ -1,0 +1,44 @@
+services:
+
+  mongodb:
+    image: mongo:7
+    container_name: elearning-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    container_name: elearning-server
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: elearning-mongo-express
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+    environment:
+      - ME_CONFIG_MONGODB_URL=mongodb://mongodb:27017/
+
+ # quiz:
+  #  build:
+ #     context: .
+  #    dockerfile: Dockerfile.quiz
+   # container_name: elearning-quiz
+   # ports:
+   #   - "3001:3001"
+   # depends_on:
+   #   - mongodb
+   # environment:
+    #  - OPENAI_API_KEY=${OPENAI_API_KEY}
+
+volumes:
+  mongo_data:
