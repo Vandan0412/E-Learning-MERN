@@ -1,5 +1,5 @@
 # E-Learning Platform
-
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
 A full-stack e-learning web application with AI-powered quiz generation and a text-to-speech academic voice assistant.
 
 ## Features
